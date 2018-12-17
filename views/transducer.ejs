@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRTX Web Interface</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+    <% include partials/nav %>
+    </nav>
+    <section class="container container-small">
+      <select class="select_box right form-control" id="selectBox">
+        <option value="0">Meter Configuration</option>
+        <option value="1">Meter Diagnostic</option>
+      </select>
+      <div class="meterConfig">
+        <h1 class="text-center">Meter Diagnostics</h1>
+        <br>
+        <div class="row">
+          <div class="col-md-10 col-centered">
+            <table class="table table-striped two-row">
+              <tbody>
+                <tr>
+                  <th>Faults</th>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th>NV Faults</th>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th>ADC_Counts[0]</th>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th>ADC_Counts[1]</th>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th>ADC_Counts[2]</th>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th>ADC_Counts[3]</th>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th>Analog_OutCount[0]</th>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th>Analog_OutCount[1]</th>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th>Analog_OutCount[2]</th>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th>Exceptions</th>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="meterDiag">
+        <h1 class="text-center">
+          Meter Configuration:
+        </h1>
+        <br>
+        <div class="row">
+          <div class="col-md-10 col-centered">
+            <table class="table table-striped two-row">
+              <tbody>
+                <tr>
+                  <th>Meter Index</th>
+                  <td>12 inch</td>
+                </tr>
+                <tr>
+                  <th>Meter k-Factor</th>
+                  <td>2.53447e-26 P/ft³</td>
+                </tr>
+                <tr>
+                  <th>Insertion Pipe ID</th>
+                  <td>5.4614e+11 inch</td>
+                </tr>
+                <tr>
+                  <th>Insertion Base K</th>
+                  <td>4.32958e-19 P/ft</td>
+                </tr>
+                <tr>
+                  <th>Insertion Base Re</th>
+                  <td>6.73051e-21</td>
+                </tr>
+                <tr>
+                  <th>Low Flow Cutoff</th>
+                  <td>1.41972e-14</td>
+                </tr>
+                <tr>
+                  <th>Vortek Coefficient Ck</th>
+                  <td>1.15737e-38</td>
+                </tr>
+                <tr>
+                  <th>Press Coefficient B00</th>
+                  <td>1.96457e-31</td>
+                </tr>
+                <tr>
+                  <th>Press Coefficient B01</th>
+                  <td>4.50889e-36</td>
+                </tr>
+                <tr>
+                  <th>Press Coefficient B02</th>
+                  <td>1.84047e-26</td>
+                </tr>
+                <tr>
+                  <th>Press Coefficient B10</th>
+                  <td>2.3338e-38</td>
+                </tr>
+                <tr>
+                  <th>Press Coefficient B11</th>
+                  <td>8.76193e+12</td>
+                </tr>
+                <tr>
+                  <th>Press Coefficient B12</th>
+                  <td>-5.0093e-29</td>
+                </tr>
+                <tr>
+                  <th>Press Coefficient B20</th>
+                  <td>-0.000121177</td>
+                </tr>
+                <tr>
+                  <th>Press Coefficient B21</th>
+                  <td>9.55588e-35</td>
+                </tr>
+                <tr>
+                  <th>Press Coefficient B22</th>
+                  <td>4.25559e-18</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+    $(document).ready(function(){
+      $(".meterConfig").css("display", "none");
+      $('#selectBox').on('change', function() {
+       if(this.value == 0){
+         $(".meterConfig").css("display", "none");
+         $(".meterDiag").css("display", "inline");
+       }
+       else if(this.value == 1){
+         $(".meterConfig").css("display", "inline");
+         $(".meterDiag").css("display", "none");
+       }
+      });
+    });
+    </script>
+    <footer>
+      <% include partials/footer %> 
+    </footer>
+  </body>
+</html>

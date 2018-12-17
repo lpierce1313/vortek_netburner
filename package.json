@@ -1,0 +1,17 @@
+{
+  "name": "vortekRTU",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "postcss-cli": "^4.1.0",
+    "rimraf": "^2.6.1"
+  },
+  "scripts": {
+    "build-autoprefix": "postcss --use autoprefixer --map false --output public/css/bulma.css public/css/bulma.css",
+    "build-clean": "rimraf css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}

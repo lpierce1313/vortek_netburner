@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="description" content="Home Page">
+  <meta name="author" content="Luke Pierce">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav>
+    <% include ../partials/nav %>
+  </nav>
+  <div class="row">
+    <div class="col-md-3" style="margin-left: 10px;">
+      <% include ../partials/config %>
+    </div>
+    <div class="col-md-8">
+    <h2>Diagnostics Level 1</h2>
+    
+    <form action="Output.html" method="POST" class="form-group" id="output">
+      <div class="accordian">
+        <div class="head" data-toggle="collapse" data-target="#outputs">
+          Troubleshooting Values 1
+        </div>
+        <div class="body collapse in" id="outputs">
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">F (Vortek shedding frequency, Hz)</h5></div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" disabled value='-1.71465e+38' style="margin-top:15px;"/>
+              </div>
+          </div>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">FI(Adaptive Filter)</h5></div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" disabled value='-1.71465e+38' style="margin-top:15px;"/>
+              </div>
+          </div>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">G(Galin)</h5></div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" value='-1.71465e+38' style="margin-top:15px;"/>
+              </div>
+          </div>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">A(Amplitude, Volts rms)</h5></div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" disabled value='-1.71465e+38' style="margin-top:15px;"/>
+              </div>
+          </div>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">A1</h5></div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" value='-1.71465e+38' style="margin-top:15px;"/>
+              </div>
+          </div>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">A2</h5></div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" value='-1.71465e+38' style="margin-top:15px;"/>
+              </div>
+          </div>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">A3</h5></div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" value='-1.71465e+38' style="margin-top:15px;"/>
+              </div>
+          </div>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">A4</h5></div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" value='-1.71465e+38' style="margin-top:15px;"/>
+              </div>
+          </div>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">V(Calculated avg. pipe velocity ft/sec)</h5></div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" disabled value='-1.71465e+38' style="margin-top:15px;"/>
+              </div>
+          </div>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">RTD1(Resistance value of Integral RTD ohms)</h5></div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" disabled value='-1.71465e+38' style="margin-top:15px;"/>
+              </div>
+          </div>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">RTD2(Optional)</h5></div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" disabled value='-1.71465e+38' style="margin-top:15px;"/>
+              </div>
+          </div>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">Pe(v)(Pressire transducer exoltation voltage)</h5></div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" value='-1.71465e+38' style="margin-top:15px;"/>
+              </div>
+          </div>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">Pv(v)(Pressure transducer sense voltage)</h5></div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" value='-1.71465e+38' style="margin-top:15px;"/>
+              </div>
+          </div>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">Ck(Calculated Ck)</h5></div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" value='-1.71465e+38' style="margin-top:15px;"/>
+              </div>
+          </div>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">Lvl(Threshold level)</h5></div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" value='-1.71465e+38' style="margin-top:15px;"/>
+              </div>
+          </div>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">Adj filter</h5></div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" value='-1.71465e+38' style="margin-top:15px;"/>
+              </div>
+          </div>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">Iso. Power Volts(VDC)</h5></div>
+              <div class="col-md-6">
+                <input class="form-control" type="text" value='-1.71465e+38' style="margin-top:15px;"/>
+              </div>
+          </div>                                                
+        </div>               
+      </div>
+    </form>
+
+    <form action="Output.html" method="POST" class="form-group" id="output">
+      <div class="accordian">
+        <div class="head" data-toggle="collapse" data-target="#outputsTwo">
+          Troubleshooting Values 2
+        </div>
+        <div class="body collapse in" id="outputsTwo">
+          <div class="row bottom-buffer-sm">
+            <div class="col-md-6"><h5 class="label">Kc</h5></div>
+            <div class="col-md-6">
+              <INPUT class="form-control" type="text" disabled value='-1.71465e+38' />
+            </div>
+          </div>
+          <br>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">Kb</h5></div>
+              <div class="col-md-6">
+                <INPUT class="form-control" type="text" disabled value='-1.71465e+38' />
+              </div>
+          </div>
+          <br>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">Re (Calculated Reynolds Number)</h5></div>
+              <div class="col-md-6">
+                <INPUT class="form-control" type="text" mb name="" value="-1.71465e+38" />
+              </div>
+          </div>
+          <br>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">Visc (Calculated viscosity of flowing fluid, Cp)</h5></div>
+              <div class="col-md-6">
+                <INPUT class="form-control" type="text" disabled value='-1.71465e+38' />
+              </div>
+          </div>
+          <br>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">Enthalpy 1 (BTU/hr)</h5></div>
+              <div class="col-md-6">
+                <INPUT class="form-control" type="text" disabled value='-1.71465e+38' />
+              </div>
+          </div>
+          <br>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">Enthalpy 2 (BTU/hr)</h5></div>
+              <div class="col-md-6">
+                <INPUT class="form-control" type="text" disabled value='-1.71465e+38' />
+              </div>
+          </div>
+          <br>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">x Cnts (4-20 mA input counts</h5></div>
+              <div class="col-md-6">
+                <INPUT class="form-control" type="text" mb name="" value="-1.71465e+38" />
+              </div>
+          </div>
+          <br>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">Extx.xx (4-20 mA current, mA)</h5></div>
+              <div class="col-md-6">
+                <INPUT class="form-control" type="text" mb name="" value="-1.71465e+38" />
+              </div>
+          </div>
+          <br>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">Pulse Out Queue</h5></div>
+              <div class="col-md-6">
+                <INPUT class="form-control" type="text" mb name="" value="-1.71465e+38" />
+              </div>
+          </div>
+          <br>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">Sig. Rev</h5></div>
+              <div class="col-md-6">
+                <INPUT class="form-control" type="text" disabled value='0.0' />
+              </div>
+          </div>
+          <br>
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">Micro Rev</h5></div>
+              <div class="col-md-6">
+                <INPUT class="form-control" type="text" mb name="" value="-1.71465e+38" />
+              </div>
+          </div>
+
+          <div class="row bottom-buffer-sm">
+              <div class="col-md-6"><h5 class="label">Internal Temp (&deg; F)</h5></div>
+              <div class="col-md-6">
+                <INPUT class="form-control" type="text" mb name="internalTemp" value="-1.71465e+38" />
+              </div>
+          </div>
+        </div>               
+      </div>
+    </form>
+
+    </div>
+  </div>
+  <section class="container container-small">
+  </section>
+  <footer>
+  <% include ../partials/footer %> 
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>

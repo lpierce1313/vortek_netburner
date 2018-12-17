@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="description" content="Home Page">
+  <meta name="author" content="Luke Pierce">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav>
+    <% include ../partials/nav %>
+  </nav>
+  <div class="row">
+    <div class="col-md-3" style="margin-left: 10px;">
+      <% include ../partials/config %>
+    </div>
+    <div class="col-md-8">
+    <h2>Alarm Configuration</h2>
+    <form action="Output.html" method="POST" class="form-group" id="output" style="margin-bottom: 100px;">
+      <div class="accordian">
+        <div class="head" data-toggle="collapse" data-target="#outputs">
+          Alarms
+        </div>
+        <div class="body collapse in" id="outputs">
+          <div class="row">
+            <div class="col-xs-3 col-xs-offset-2">
+              <h5 class="label">Measure</h5>
+            </div>
+            <div class="col-xs-2">
+              <h5 class="label">Action</h5>
+            </div>
+            <div class="col-xs-2">
+              <h5 class="label">Limit</h5>
+            </div>
+            <div class="col-xs-2">
+              <h5 class="label">Units</h5>
+            </div>
+          </div>
+          <br>
+          <div class="row bottom-buffer-lg">
+            <div class="col-xs-2">
+              <h5 class="label">Alarm Output 1</h5>
+            </div>
+            <div class="col-xs-3">
+              <select class="form-control" id="measure{{index}}" name="analog_output{{index}}">
+                  <option value="{{value}}">None</option>
+                  <option value="{{value}}">Mass Flow</option>
+                  <option value="{{value}}">Volume Flow</option>
+                  <option value="{{value}}">Energy</option>
+                  <option value="{{value}}">Temperature 1</option>
+                  <option value="{{value}}">Temperature 2</option>
+                  <option value="{{value}}">Pressure</option>
+                  <option value="{{value}}">Density</option>
+              </select>
+            </div>
+
+            <div class="col-xs-2">
+              <input class="form-control" type="text" value="-1.71465e+38" mb name="mA4{{index}}" id="mA4{{index}}" />
+            </div>
+
+            <div class="col-xs-2">
+              <input class="form-control" type="text" value="-1.71465e+38" mb name="mA20{{index}}" id="mA20{{index}}"/>
+            </div>
+
+            <div class="col-xs-2">
+              <input class="form-control" type="text" value="-1.71465e+38" mb name="TC{{index}}" id="TC{{index}}"/>
+            </div>
+
+            <div class="col-xs-1">
+              <h5 class="unit">lb/hr</h5>
+            </div>
+          </div>
+          <br>
+          <div class="row bottom-buffer-lg">
+            <div class="col-xs-2">
+              <h5 class="label">Alarm Output 2</h5>
+            </div>
+
+            <div class="col-xs-3">
+              <select class="form-control" id="measure{{index}}" name="analog_output{{index}}">
+                  <option value="{{value}}">None</option>
+                  <option value="{{value}}">Mass Flow</option>
+                  <option value="{{value}}">Volume Flow</option>
+                  <option value="{{value}}">Energy</option>
+                  <option value="{{value}}">Temperature 1</option>
+                  <option value="{{value}}">Temperature 2</option>
+                  <option value="{{value}}">Pressure</option>
+                  <option value="{{value}}">Density</option>
+              </select>
+            </div>
+
+            <div class="col-xs-2">
+              <input class="form-control" type="text" value="-1.71465e+38" mb name="mA4{{index}}" id="mA4{{index}}" />
+            </div>
+
+            <div class="col-xs-2">
+              <input class="form-control" type="text" value="-1.71465e+38" mb name="mA20{{index}}" id="mA20{{index}}"/>
+            </div>
+
+            <div class="col-xs-2">
+              <input class="form-control" type="text" value="-1.71465e+38" mb name="TC{{index}}" id="TC{{index}}"/>
+            </div>
+
+            <div class="col-xs-1">
+              <h5 class="unit">lb/hr</h5>
+            </div>
+          </div>
+          <br>
+          <div class="row bottom-buffer-lg">
+            <div class="col-xs-2">
+              <h5 class="label">Alarm Output 3</h5>
+            </div>
+
+            <div class="col-xs-3">
+              <select class="form-control" id="measure{{index}}" name="analog_output{{index}}">
+                  <option value="{{value}}">None</option>
+                  <option value="{{value}}">Mass Flow</option>
+                  <option value="{{value}}">Volume Flow</option>
+                  <option value="{{value}}">Energy</option>
+                  <option value="{{value}}">Temperature 1</option>
+                  <option value="{{value}}">Temperature 2</option>
+                  <option value="{{value}}">Pressure</option>
+                  <option value="{{value}}">Density</option>
+              </select>
+            </div>
+
+            <div class="col-xs-2">
+              <input class="form-control" type="text" value="-1.71465e+38" mb name="mA4{{index}}" id="mA4{{index}}" />
+            </div>
+
+            <div class="col-xs-2">
+              <input class="form-control" type="text" value="-1.71465e+38" mb name="mA20{{index}}" id="mA20{{index}}"/>
+            </div>
+
+            <div class="col-xs-2">
+              <input class="form-control" type="text" value="-1.71465e+38" mb name="TC{{index}}" id="TC{{index}}"/>
+            </div>
+
+            <div class="col-xs-1">
+              <h5 class="unit">lb/hr</h5>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </form>
+    <div align="left" style="clear: both;">
+      <br>
+      <hr width="75%"; align="left";>
+      <br>
+    </div>
+    <form action="Output.html" method="POST" class="form-group">
+      <table cellpadding=5 cellspacing=5>
+        <p style="font-weight: bold;">Number of Alarm Logs: 0</p>
+        <p class="label">Alarms:</p>
+        <select style='width: 4em; margin-right: 3px;'>
+          <option value=0>PLACEHOLDER</option>
+          <option value=0>PLACEHOLDER</option>
+          <option value=0>PLACEHOLDER</option>
+        </select>
+        <input type=text style='width: 30em; margin-right: 3px;' value='PLACEHOLDER' >
+        <button type=submit name=clearalarms value=clear class="btn btn-primary">Clear Alarms Logs</button>
+      </table>
+    </form>
+    </div>
+  </div>
+  <section class="container container-small">
+  </section>
+  <footer>
+  <% include ../partials/footer %> 
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="description" content="Home Page">
+  <meta name="author" content="Luke Pierce">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <% include partials/nav %>
+  </nav>
+  <section class="container container-small">
+    <h1 class="text-center">
+      Flow Values
+    </h1>
+    <br>
+    <div class="row">
+    <div class="col-md-10 col-centered">
+        <article>
+          <table class="table table-striped three-row">
+            <tbody>
+              <tr>
+                <th scope="row">Uptime</th>
+                <td>19 days 02:33:09</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Mass Flow</th>
+                <td>2.30307</td>
+                <td>lb/sec</td>
+              </tr>
+              <tr>
+                <th scope="row">Volume Flow</th>
+                <td>5.54302e-17</td>
+                <td>ft³/sec</td>
+              </tr>
+              <tr>
+                <th scope="row">Pressure</th>
+                <td>2.34449e-38</td>
+                <td>PSI</td>
+              </tr>
+              <tr>
+                <th scope="row">Temperature 1</th>
+                <td>-7.67562e-34</td>
+                <td>°F</td>
+              </tr>
+              <tr>
+                <th scope="row">Fluid Density</th>
+                <td>2.30307</td>
+                <td>lbm/ft³</td>
+              </tr>
+              <tr>
+                <th scope="row">Flow Totalizer</th>
+                <td>0</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Flow Total Qty Per Pulse</th>
+                <td>1.16749e-38</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Hourly Flow</th>
+                <td>8.02462e-17</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+    </div>
+  </div>
+  </section>
+  <footer>
+  <% include partials/footer %> 
+  </footer>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="description" content="Home Page">
+  <meta name="author" content="Luke Pierce">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav>
+    <% include ../partials/nav %>
+  </nav>
+  <div class="row">
+    <div class="col-md-3" style="margin-left: 10px;">
+      <% include ../partials/config %>
+    </div>
+    <div class="col-md-8">
+		<h2>Analog Outputs Configuration</h2>
+		
+		<form action="Output.html" method="POST" class="form-group" id="output">
+			<div class="accordian">
+				<div class="head" data-toggle="collapse" data-target="#outputs">
+					4-20 mA Outputs
+				</div>
+<!-- 				<div class="body collapse in" id="outputs">
+					<div class="row">
+						<div class="col-xs-3 col-xs-offset-2">
+							<h5>Measure</h5>
+						</div>
+						<div class="col-xs-2">
+							<h5>4 mA</h5>
+						</div>
+						<div class="col-xs-2">
+							<h5>20 mA</h5>
+						</div>
+						<div class="col-xs-2">
+							<h5>Time Const</h5>
+						</div>
+					</div>
+
+					{{#analogOutputs}}
+						<div class="row bottom-buffer-lg">
+							<div class="col-xs-2">
+								<h5>Output {{index}}</h5>
+							</div>
+
+							<div class="col-xs-3">
+								<select class="form-control" id="measure{{index}}" name="analog_output{{index}}">
+									{{#options}}
+										<option value="{{value}}" {{selected}}>{{name}}</option>
+									{{/options}}
+								</select>
+							</div>
+
+							<div class="col-xs-2">
+								<input class="form-control" type="text" value="{{mA4}}" mb name="mA4{{index}}" id="mA4{{index}}" />
+							</div>
+
+							<div class="col-xs-2">
+								<input class="form-control" type="text" value="{{mA20}}" mb name="mA20{{index}}" id="mA20{{index}}"/>
+							</div>
+
+							<div class="col-xs-2">
+								<input class="form-control" type="text" value="{{TC}}" mb name="TC{{index}}" id="TC{{index}}"/>
+							</div>
+
+							<div class="col-xs-1">
+								<h5>{{{unit}}}</h5>
+							</div>
+						</div>
+					{{/analogOutputs}}
+				</div> -->
+				<div class="body collapse in" id="outputs">
+					<div class="row">
+						<div class="col-xs-3 col-xs-offset-2">
+							<h5 class="label">Measure</h5>
+						</div>
+						<div class="col-xs-2">
+							<h5 class="label">4 mA</h5>
+						</div>
+						<div class="col-xs-2">
+							<h5 class="label">20 mA</h5>
+						</div>
+						<div class="col-xs-2">
+							<h5 class="label">Time Const</h5>
+						</div>
+					</div>
+					<br>
+					<div class="row bottom-buffer-lg">
+						<div class="col-xs-2">
+							<h5 class="label">Output 1</h5>
+						</div>
+
+						<div class="col-xs-3">
+							<select class="form-control" id="measure{{index}}" name="analog_output{{index}}">
+									<option value="{{value}}">None</option>
+									<option value="{{value}}">Mass Flow</option>
+									<option value="{{value}}">Volume Flow</option>
+									<option value="{{value}}">Energy</option>
+									<option value="{{value}}">Temperature 1</option>
+									<option value="{{value}}">Temperature 2</option>
+									<option value="{{value}}">Pressure</option>
+									<option value="{{value}}">Density</option>
+							</select>
+						</div>
+
+						<div class="col-xs-2">
+							<input class="form-control" type="text" value="-1.71465e+38" mb name="mA4{{index}}" id="mA4{{index}}" />
+						</div>
+
+						<div class="col-xs-2">
+							<input class="form-control" type="text" value="-1.71465e+38" mb name="mA20{{index}}" id="mA20{{index}}"/>
+						</div>
+
+						<div class="col-xs-2">
+							<input class="form-control" type="text" value="-1.71465e+38" mb name="TC{{index}}" id="TC{{index}}"/>
+						</div>
+
+						<div class="col-xs-1">
+							<h5 class="unit">lb/hr</h5>
+						</div>
+					</div>
+					<br>
+					<div class="row bottom-buffer-lg">
+						<div class="col-xs-2">
+							<h5 class="label">Output 2</h5>
+						</div>
+
+						<div class="col-xs-3">
+							<select class="form-control" id="measure{{index}}" name="analog_output{{index}}">
+									<option value="{{value}}">None</option>
+									<option value="{{value}}">Mass Flow</option>
+									<option value="{{value}}">Volume Flow</option>
+									<option value="{{value}}">Energy</option>
+									<option value="{{value}}">Temperature 1</option>
+									<option value="{{value}}">Temperature 2</option>
+									<option value="{{value}}">Pressure</option>
+									<option value="{{value}}">Density</option>
+							</select>
+						</div>
+
+						<div class="col-xs-2">
+							<input class="form-control" type="text" value="-1.71465e+38" mb name="mA4{{index}}" id="mA4{{index}}" />
+						</div>
+
+						<div class="col-xs-2">
+							<input class="form-control" type="text" value="-1.71465e+38" mb name="mA20{{index}}" id="mA20{{index}}"/>
+						</div>
+
+						<div class="col-xs-2">
+							<input class="form-control" type="text" value="-1.71465e+38" mb name="TC{{index}}" id="TC{{index}}"/>
+						</div>
+
+						<div class="col-xs-1">
+							<h5 class="unit">lb/hr</h5>
+						</div>
+					</div>
+					<br>
+					<div class="row bottom-buffer-lg">
+						<div class="col-xs-2">
+							<h5 class="label">Output 3</h5>
+						</div>
+
+						<div class="col-xs-3">
+							<select class="form-control" id="measure{{index}}" name="analog_output{{index}}">
+									<option value="{{value}}">None</option>
+									<option value="{{value}}">Mass Flow</option>
+									<option value="{{value}}">Volume Flow</option>
+									<option value="{{value}}">Energy</option>
+									<option value="{{value}}">Temperature 1</option>
+									<option value="{{value}}">Temperature 2</option>
+									<option value="{{value}}">Pressure</option>
+									<option value="{{value}}">Density</option>
+							</select>
+						</div>
+
+						<div class="col-xs-2">
+							<input class="form-control" type="text" value="-1.71465e+38" mb name="mA4{{index}}" id="mA4{{index}}" />
+						</div>
+
+						<div class="col-xs-2">
+							<input class="form-control" type="text" value="-1.71465e+38" mb name="mA20{{index}}" id="mA20{{index}}"/>
+						</div>
+
+						<div class="col-xs-2">
+							<input class="form-control" type="text" value="-1.71465e+38" mb name="TC{{index}}" id="TC{{index}}"/>
+						</div>
+
+						<div class="col-xs-1">
+							<h5 class="unit">lb/hr</h5>
+						</div>
+					</div>
+				</div>								
+			</div>
+		</form>
+
+		<form action="Output.html" method="POST" class="form-group">
+			<div class="accordian">
+				<div class="head" data-toggle="collapse" data-target="#sf">
+					Scaled Frequency
+				</div>
+				<div class="body collapse in" id="sf">
+
+					<!-- {{#freq}}
+						<div class="row">
+							<div class="col-md-3 top-buffer">
+								<label for="sfMeasure">Measure</label>
+								<select class="form-control" id="sfMeasure" mb name="freq_output">
+									{{#options}}
+										<option value="{{value}}" {{selected}}>{{name}}</option>
+									{{/options}}
+								</select>
+							</div>
+
+							<div class="col-md-2 top-buffer">
+								<label for="SfLow">Lower</label>
+								<input class="form-control" type="text" value="{{SfLow}}" mb name="SfLow" id="SfLow" />
+							</div>
+
+							<div class="col-md-2 top-buffer">
+								<label for="SfUpper">Upper</label>
+								<input class="form-control" type="text" value="{{SfUpper}}" mb name="SfUpper" id="SfUpper" />
+							</div>
+
+							<div class="col-md-2 top-buffer">
+								<label for="SfTC">Time Const</label>
+								<input class="form-control" type="text" value="{{SfTC}}" mb name="SfTC" id="SfTC"/>
+							</div>
+
+							<div class="col-md-2 top-buffer">
+								<label for="FsFreq">Full Scale</label>
+								<input class="form-control" type="text" value="{{FsFreq}}" mb name="FsFreq" id="FsFreq"/>
+							</div>
+
+							<div class="col-md-1 top-buffer">
+								<label for="SfUnit">Unit</label>
+								<h5 id="SfUnit">{{{SfUnit}}}</h5>
+							</div>
+						</div>
+					{{/freq}} -->
+					<div class="row">
+							<div class="col-md-3 top-buffer">
+								<label for="sfMeasure">Measure</label>
+								<select class="form-control" id="measure{{index}}" name="analog_output{{index}}">
+										<option value="{{value}}">None</option>
+										<option value="{{value}}">Mass Flow</option>
+										<option value="{{value}}">Volume Flow</option>
+										<option value="{{value}}">Energy</option>
+										<option value="{{value}}">Temperature 1</option>
+										<option value="{{value}}">Temperature 2</option>
+										<option value="{{value}}">Pressure</option>
+										<option value="{{value}}">Density</option>
+								</select>
+							</div>
+
+							<div class="col-md-2 top-buffer">
+								<label for="SfLow">Lower</label>
+								<input class="form-control" type="text" value="-1.71465e+38" mb name="SfLow" id="SfLow" />
+							</div>
+
+							<div class="col-md-2 top-buffer">
+								<label for="SfUpper">Upper</label>
+								<input class="form-control" type="text" value="-1.71465e+38" mb name="SfUpper" id="SfUpper" />
+							</div>
+
+							<div class="col-md-2 top-buffer">
+								<label for="SfTC">Time Const</label>
+								<input class="form-control" type="text" value="-1.71465e+38" mb name="SfTC" id="SfTC"/>
+							</div>
+
+							<div class="col-md-2 top-buffer">
+								<label for="FsFreq">Full Scale</label>
+								<input class="form-control" type="text" value="-1.71465e+38" mb name="FsFreq" id="FsFreq"/>
+							</div>
+
+							<div class="col-md-1 top-buffer">
+								<label for="SfUnit">Unit</label>
+								<h5 class="unit">lb/hr</h5>
+							</div>
+					</div>
+				</div>
+			</div>
+		</form>
+    </div>
+  </div>
+  <section class="container container-small">
+  </section>
+  <footer>
+  <% include ../partials/footer %> 
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
