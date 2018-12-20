@@ -42,7 +42,7 @@ body {font-size: 16px;}
 
 .label{
 	color:black;
-	font-size: 16px;
+	font-size: 17px;
 	font-weight: bold;
 }
 
@@ -57,3 +57,5 @@ hr{
     color: #286090; /* old IE */
     background-color: #286090; /* Modern Browsers */
 }
+
+.big-checkbox {width: 20px; height: 20px;}

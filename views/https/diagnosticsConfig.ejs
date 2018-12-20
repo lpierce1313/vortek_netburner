@@ -13,86 +13,85 @@
     <% include ../partials/nav %>
   </nav>
   <div class="row">
-    <div class="col-md-3" style="margin-left: 10px;">
+    <div class="col-md-3" style="padding-left: 30px;">
       <% include ../partials/config %>
     </div>
-    <div class="col-md-5 col-md-offset-1">
+    <div class="col-md-8">
     <h2>Diagnostics Menu</h2>
-    <P>Zero values stop simulation.</P>
-
+    <p>Zero values stop simulation.</p>
+    <br><br>
     <form action="DiagnosticConfig.html" method="POST">
-      <div class="row bottom-buffer-sm">
-          <div class="col-md-6"><h5 class="label">Simulated Vor Freq (Hz)</h5></div>
+      <div class="row">
+          <div class="col-md-3"><h5 class="label">Simulated Vor Freq (Hz)</h5></div>
           <div class="col-md-6">
-            <input class="form-control" type="text" mb name="simFreq" value="-1.71465e+38" style="margin-top:15px;"/>
+            <input class="form-control" type="text" mb name="simFreq" value="-1.71465e+38"/>
           </div>
       </div>
-
-      <div class="row bottom-buffer-sm">
-          <div class="col-md-6"><h5 class="label">Simulated Temp1 (&deg;F)</h5></div>
+      <br>
+      <div class="row">
+          <div class="col-md-3"><h5 class="label">Simulated Temp1 (&deg;F)</h5></div>
           <div class="col-md-6">
-            <input class="form-control" type="text" mb name="simTemp1" value="-1.71465e+38" style="margin-top:15px;"/>
+            <input class="form-control" type="text" mb name="simTemp1" value="-1.71465e+38"/>
           </div>
       </div>
-
-      <div class="row bottom-buffer-sm">
-          <div class="col-md-6"><h5 class="label">Simulated Temp2 (&deg;F)</h5></div>
+      <br>
+      <div class="row">
+          <div class="col-md-3"><h5 class="label">Simulated Temp2 (&deg;F)</h5></div>
           <div class="col-md-6">
-            <input class="form-control" type="text" mb name="simTemp2" value="-1.71465e+38" style="margin-top:15px;"/>
+            <input class="form-control" type="text" mb name="simTemp2" value="-1.71465e+38"/>
           </div>
       </div>
-
-      <div class="row bottom-buffer-sm">
-          <div class="col-md-6"><h5 class="label">Simulated Press (PSIA)</h5></div>
+      <br>
+      <div class="row">
+          <div class="col-md-3"><h5 class="label">Simulated Press (PSIA)</h5></div>
           <div class="col-md-6">
-            <input class="form-control" type="text" mb name="simPressure" value="-1.71465e+38" style="margin-top:15px;"/>
+            <input class="form-control" type="text" mb name="simPressure" value="-1.71465e+38"/>
           </div>
       </div>
-
-      <div class="row bottom-buffer-sm top-buffer-xl">
-          <div class="col-md-6"><h5 class="label">Max. Velocity (ft/sec)</h5></div>
+      <br><br><br>
+      <div class="row">
+          <div class="col-md-3"><h5 class="label">Max. Velocity (ft/sec)</h5></div>
           <div class="col-md-6">
-            <input class="form-control" type="text" disabled value='-1.71465e+38' style="margin-top:15px;"/>
+            <input class="form-control" type="text" disabled value='-1.71465e+38'/>
           </div>
       </div>
-
-      <div class="row bottom-buffer-sm">
-          <div class="col-md-6"><h5 class="label">Max. Temp (&deg;F)</h5></div>
+      <br>
+      <div class="row">
+          <div class="col-md-3"><h5 class="label">Max. Temp (&deg;F)</h5></div>
           <div class="col-md-6">
-            <input class="form-control" type="text" disabled value='-1.71465e+38' style="margin-top:15px;"/>
+            <input class="form-control" type="text" disabled value='-1.71465e+38'/>
           </div>
       </div>
-
-      <div class="row bottom-buffer-sm">
-          <div class="col-md-6"><h5 class="label">Max. Temp1 (&deg;F)</h5></div>
+      <br>
+      <div class="row">
+          <div class="col-md-3"><h5 class="label">Max. Temp1 (&deg;F)</h5></div>
           <div class="col-md-6">
-            <input class="form-control" type="text" disabled value='-1.71465e+38' style="margin-top:15px;"/>
+            <input class="form-control" type="text" disabled value='-1.71465e+38'/>
           </div>
       </div>
-
-      <div class="row bottom-buffer-sm">
-          <div class="col-md-6"><h5 class="label">Max. Internal Temp (&deg;F)</h5></div>
+      <br>
+      <div class="row">
+          <div class="col-md-3"><h5 class="label">Max. Internal Temp (&deg;F)</h5></div>
           <div class="col-md-6">
-            <input class="form-control" type="text" disabled value='-1.71465e+38' style="margin-top:15px;"/>
+            <input class="form-control" type="text" disabled value='-1.71465e+38'/>
           </div>
       </div>
-
-      <div class="row bottom-buffer-sm">
-          <div class="col-md-6"><h5 class="label">Min. Internal Temp (&deg;F)</h5></div>
+      <br>
+      <div class="row">
+          <div class="col-md-3"><h5 class="label">Min. Internal Temp (&deg;F)</h5></div>
           <div class="col-md-6">
-            <input class="form-control" type="text" disabled value='-1.71465e+38' style="margin-top:15px;"/>
+            <input class="form-control" type="text" disabled value='-1.71465e+38'/>
           </div>
       </div>
-
-      <div class="row bottom-buffer-sm">
-          <div class="col-md-6"><h5 class="label">Max. Pressure (PSIA) (&deg;F)</h5></div>
+      <br>
+      <div class="row">
+          <div class="col-md-3"><h5 class="label">Max. Pressure (PSIA) (&deg;F)</h5></div>
           <div class="col-md-6">
-            <input class="form-control" type="text" disabled value='-1.71465e+38' style="margin-top:15px;"/>
+            <input class="form-control" type="text" disabled value='-1.71465e+38'/>
           </div>
       </div>
-
-       
-      <div class="row bottom-buffer-sm">
+      <br><br>  
+      <div class="row">
           <div class="col-md-4">
             <button class="nbEventBtn btn btn-md btn-primary btn-block" name="clearmax">
               Clear Max Values
@@ -101,16 +100,17 @@
       </div>
     </form>
     <br>
-    <hr width="100%"; align="left";>
+    <hr width="76%"; align="left";>
     <br>
     <form action="Output.html" method="POST" class="form-group">
       <table cellpadding=5 cellspacing=5>
-        <p style="font-weight: bold;">Number of System Logs: 0</p>
+        <p style="font-weight: bold; font-size: 17px;">Number of System Logs: 0</p>
+        <br>
         <p class="label">System:</p>
         <select style='width: 4em; margin-right: 3px;'>
-          <option value=0>PLACEHOLDER</option>
-          <option value=0>PLACEHOLDER</option>
-          <option value=0>PLACEHOLDER</option>
+          <option value=0>0</option>
+          <option value=0>1</option>
+          <option value=0>2</option>
         </select>
         <input type=text style='width: 30em; margin-right: 3px;' value='PLACEHOLDER' >
         <button type=submit name=clearalarms value=clear class="btn btn-primary">Clear Log</button>

@@ -13,10 +13,10 @@
     <% include ../partials/nav %>
   </nav>
   <div class="row">
-    <div class="col-md-3" style="margin-left: 10px;">
+    <div class="col-md-3" style="padding-left: 30px;">
       <% include ../partials/config %>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-9">
     <h2>Units Configuration</h2>
     <form action="Output.html" method="POST" class="form-group" id="output">
       <div class="accordian">
@@ -107,13 +107,6 @@
                   <option value="{{value}}">Volume</option>                  
               </select>
             </div>
-            <div class="col-xs-3 col-xs-offset-1">
-              <select class="form-control" id="measure{{index}}" name="analog_output{{index}}">
-                  <option value="{{value}}">None</option>
-                  <option value="{{value}}">Mass</option>
-                  <option value="{{value}}">Volume</option>                  
-              </select>
-            </div>
           </div>
           <br>
           <div class="row bottom-buffer-lg">
@@ -127,25 +120,11 @@
                   <option value="{{value}}">Volume</option>                  
               </select>
             </div>
-            <div class="col-xs-3 col-xs-offset-1">
-              <select class="form-control" id="measure{{index}}" name="analog_output{{index}}">
-                  <option value="{{value}}">None</option>
-                  <option value="{{value}}">Mass</option>
-                  <option value="{{value}}">Volume</option>                  
-              </select>
-            </div>
           </div>
           <br>
           <div class="row bottom-buffer-lg">
             <div class="col-xs-2">
               <h5 class="label">Density</h5>
-            </div>
-            <div class="col-xs-3 col-xs-offset-1">
-              <select class="form-control" id="measure{{index}}" name="analog_output{{index}}">
-                  <option value="{{value}}">None</option>
-                  <option value="{{value}}">Mass</option>
-                  <option value="{{value}}">Volume</option>                  
-              </select>
             </div>
             <div class="col-xs-3 col-xs-offset-1">
               <select class="form-control" id="measure{{index}}" name="analog_output{{index}}">

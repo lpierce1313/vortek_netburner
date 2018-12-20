@@ -13,10 +13,331 @@
     <% include ../partials/nav %>
   </nav>
   <div class="row">
-    <div class="col-md-3 offset">
+    <div class="col-md-3" style="padding-left: 30px;">
       <% include ../partials/config %>
     </div>
-    <div class="col-md-7 col-md-offset-2">
+    <div class="col-md-9">
+      <h2>SD Card Logging Configuration</h2>
+      <br>
+      <form action="Output.html" method="POST" class="form-group" id="output">
+          <div></div>
+          <h3>Log Items</h3>
+          <br>
+          <div class="row">
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Temperature
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Temperature 1
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Temperature Units
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Pressure
+                </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Pressure Units
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Volume Flow
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Volume Flow Units
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Mass Flow
+                </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Mass Flow Units
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Energy Flow
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Energy Flow Units
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Fluid Viscosity
+                </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Fluid Density
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Density Units
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Fluid Enthalpy 0
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Fluid Enthalpy 1
+                </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Standard Ref. Density
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Normal Ref. Density
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Frequency
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Filter Frequency
+                </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Fluid Velocity
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Reynolds Number
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Temp Comp K Factor
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  RTD Resistance[0]
+                </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  RTD Resistance[1]
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Kc
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  RTotal[0].fp
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  RTotal[1].fp
+                </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  RTotal[2].fp
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  RTotal[3].fp
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  NRTotal[0].fp
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  NRTotal[1].fp
+                </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  NRTotal[2].fp
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  NRTotal[3].fp
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Base Kc
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Base Re
+                </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Internal Temperature
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Scalened Output Frequency
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Max Velocity
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Max Temperature
+                </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Nax Temperature 1
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Max Pressure
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Max Internal Temperature
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Min Internal Temperature
+                </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  V rms
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Hourly Flow
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Loop mA
+                </label>
+            </div>
+            <div class="col-md-2">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  MB9K
+                </label>
+            </div>
+          </div>                    
+          <br>
+          <button type="button" class="btn btn-primary btn-block wideBTN">SET</button>                          
+      </form>
     </div>
   </div>
   <section class="container container-small">
@@ -24,5 +345,8 @@
   <footer>
   <% include ../partials/footer %> 
   </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
 </body>
 </html>

@@ -13,10 +13,82 @@
     <% include ../partials/nav %>
   </nav>
   <div class="row">
-    <div class="col-md-3 offset">
+    <div class="col-md-3" style="padding-left: 30px;">
       <% include ../partials/config %>
     </div>
-    <div class="col-md-7 col-md-offset-2">
+    <div class="col-md-9">
+    <h2>Calibration Menu</h2>
+    <form action="Output.html" method="POST" class="form-group" id="output">
+      <div class="accordian">
+        <div class="head" data-toggle="collapse" data-target="#outputs">
+          Calibration
+        </div>
+         <div class="body collapse in" id="outputs">
+            <div class="row">
+              <br>
+              <div class="col-md-2">
+                <h5 class="label">Meter Size</h5>
+              </div>
+              <div class="col-md-5">
+                <input class="form-control" type="text" value="-1.71465e+38" mb name="mA20{{index}}" id="mA20{{index}}"/>
+              </div>
+              <div class="col-md-2">
+                
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-2">
+                <h5 class="label">Meter Size</h5>
+              </div>
+              <div class="col-md-5">
+                <input class="form-control" type="text" value="-1.71465e+38" mb name="mA20{{index}}" id="mA20{{index}}"/>
+              </div>
+              <div class="col-md-2">
+                
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-2">
+                <h5 class="label">Meter Size</h5>
+              </div>
+              <div class="col-md-5">
+                <input class="form-control" type="text" value="-1.71465e+38" mb name="mA20{{index}}" id="mA20{{index}}"/>
+              </div>
+              <div class="col-md-2">
+                
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-2">
+                <h5 class="label">Meter Size</h5>
+              </div>
+              <div class="col-md-5">
+                <input class="form-control" type="text" value="-1.71465e+38" mb name="mA20{{index}}" id="mA20{{index}}"/>
+              </div>
+              <div class="col-md-2">
+                
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-2">
+                <h5 class="label">Meter Size</h5>
+              </div>
+              <div class="col-md-5">
+                <input class="form-control" type="text" value="-1.71465e+38" mb name="mA20{{index}}" id="mA20{{index}}"/>
+              </div>
+              <div class="col-md-2">
+                
+              </div>
+            </div>
+            <br>                                                
+          </div>   
+      </div>
+      <br>
+    </form>
     </div>
   </div>
   <section class="container container-small">
@@ -24,5 +96,8 @@
   <footer>
   <% include ../partials/footer %> 
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
 </body>
 </html>

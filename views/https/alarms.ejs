@@ -13,10 +13,10 @@
     <% include ../partials/nav %>
   </nav>
   <div class="row">
-    <div class="col-md-3" style="margin-left: 10px;">
+    <div class="col-md-3" style="padding-left: 30px;">
       <% include ../partials/config %>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-9">
     <h2>Alarm Configuration</h2>
     <form action="Output.html" method="POST" class="form-group" id="output" style="margin-bottom: 100px;">
       <div class="accordian">
@@ -55,29 +55,25 @@
                   <option value="{{value}}">Density</option>
               </select>
             </div>
-
             <div class="col-xs-2">
-              <input class="form-control" type="text" value="-1.71465e+38" mb name="mA4{{index}}" id="mA4{{index}}" />
+              <select class="form-control" id="measure{{index}}" name="analog_output{{index}}">
+                  <option value="{{value}}">None</option>
+                  <option value="{{value}}">Low</option>
+                  <option value="{{value}}">High</option>
+              </select>
             </div>
-
             <div class="col-xs-2">
               <input class="form-control" type="text" value="-1.71465e+38" mb name="mA20{{index}}" id="mA20{{index}}"/>
             </div>
-
-            <div class="col-xs-2">
-              <input class="form-control" type="text" value="-1.71465e+38" mb name="TC{{index}}" id="TC{{index}}"/>
-            </div>
-
             <div class="col-xs-1">
               <h5 class="unit">lb/hr</h5>
-            </div>
+            </div>            
           </div>
           <br>
           <div class="row bottom-buffer-lg">
             <div class="col-xs-2">
-              <h5 class="label">Alarm Output 2</h5>
+              <h5 class="label">Alarm Output 1</h5>
             </div>
-
             <div class="col-xs-3">
               <select class="form-control" id="measure{{index}}" name="analog_output{{index}}">
                   <option value="{{value}}">None</option>
@@ -92,15 +88,15 @@
             </div>
 
             <div class="col-xs-2">
-              <input class="form-control" type="text" value="-1.71465e+38" mb name="mA4{{index}}" id="mA4{{index}}" />
+              <select class="form-control" id="measure{{index}}" name="analog_output{{index}}">
+                  <option value="{{value}}">None</option>
+                  <option value="{{value}}">Low</option>
+                  <option value="{{value}}">High</option>
+              </select>
             </div>
 
             <div class="col-xs-2">
               <input class="form-control" type="text" value="-1.71465e+38" mb name="mA20{{index}}" id="mA20{{index}}"/>
-            </div>
-
-            <div class="col-xs-2">
-              <input class="form-control" type="text" value="-1.71465e+38" mb name="TC{{index}}" id="TC{{index}}"/>
             </div>
 
             <div class="col-xs-1">
@@ -110,9 +106,8 @@
           <br>
           <div class="row bottom-buffer-lg">
             <div class="col-xs-2">
-              <h5 class="label">Alarm Output 3</h5>
+              <h5 class="label">Alarm Output 1</h5>
             </div>
-
             <div class="col-xs-3">
               <select class="form-control" id="measure{{index}}" name="analog_output{{index}}">
                   <option value="{{value}}">None</option>
@@ -125,19 +120,16 @@
                   <option value="{{value}}">Density</option>
               </select>
             </div>
-
             <div class="col-xs-2">
-              <input class="form-control" type="text" value="-1.71465e+38" mb name="mA4{{index}}" id="mA4{{index}}" />
+              <select class="form-control" id="measure{{index}}" name="analog_output{{index}}">
+                  <option value="{{value}}">None</option>
+                  <option value="{{value}}">Low</option>
+                  <option value="{{value}}">High</option>
+              </select>
             </div>
-
             <div class="col-xs-2">
               <input class="form-control" type="text" value="-1.71465e+38" mb name="mA20{{index}}" id="mA20{{index}}"/>
             </div>
-
-            <div class="col-xs-2">
-              <input class="form-control" type="text" value="-1.71465e+38" mb name="TC{{index}}" id="TC{{index}}"/>
-            </div>
-
             <div class="col-xs-1">
               <h5 class="unit">lb/hr</h5>
             </div>
@@ -147,17 +139,18 @@
     </form>
     <div align="left" style="clear: both;">
       <br>
-      <hr width="75%"; align="left";>
+      <hr width="76%"; align="left";>
       <br>
     </div>
     <form action="Output.html" method="POST" class="form-group">
       <table cellpadding=5 cellspacing=5>
-        <p style="font-weight: bold;">Number of Alarm Logs: 0</p>
+        <p style="font-weight: bold; font-size: 17px;">Number of Alarm Logs: 0</p>
+        <br>
         <p class="label">Alarms:</p>
         <select style='width: 4em; margin-right: 3px;'>
-          <option value=0>PLACEHOLDER</option>
-          <option value=0>PLACEHOLDER</option>
-          <option value=0>PLACEHOLDER</option>
+          <option value=0>0</option>
+          <option value=0>1</option>
+          <option value=0>2</option>
         </select>
         <input type=text style='width: 30em; margin-right: 3px;' value='PLACEHOLDER' >
         <button type=submit name=clearalarms value=clear class="btn btn-primary">Clear Alarms Logs</button>

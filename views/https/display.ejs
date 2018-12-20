@@ -13,46 +13,46 @@
     <% include ../partials/nav %>
   </nav>
   <div class="row">
-    <div class="col-md-3" style="margin-left: 10px;">
+    <div class="col-md-3" style="padding-left: 30px;">
       <% include ../partials/config %>
     </div>
-    <div class="col-md-7 col-md-offset-1">
+    <div class="col-md-9">
       <h2>Meter LCD Display Configuration</h2>
       <br>
       <form action="Output.html" method="POST" class="form-group" id="output">
           <div class="row">
             <div class="col-md-2"> <b>Cycle Time</b></div>
-            <div class="col-md-4"> <input type="text" class="form-control" id="cycleTime" value="0"></div>
+            <div class="col-md-5"> <input type="text" class="form-control" id="cycleTime" value="0"></div>
           </div>
           <br> 
           <div class="row">
             <div class="col-md-2"> <b>Number of Digits</b></div>
-            <div class="col-md-4"> <input type="text" class="form-control" id="numDigits" value="0"></div>
+            <div class="col-md-5"> <input type="text" class="form-control" id="numDigits" value="0"></div>
           </div>
           <br> 
           <div class="row">
             <div class="col-md-2"> <b>Display TC (s)</b></div>
-            <div class="col-md-4"> <input type="text" class="form-control" id="displayTC" value="0"></div>
+            <div class="col-md-5"> <input type="text" class="form-control" id="displayTC" value="0"></div>
           </div>
           <br>
-          <hr align="left" width="75%">
+          <hr align="left" width="60%">
           <h3>LCD Display Items</h3>
           <br>
           <div class="row">
             <div class="col-md-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
                 <label class="form-check-label" for="gridCheck1">
                   Totalizer
                 </label>
             </div>
             <div class="col-md-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
                 <label class="form-check-label" for="gridCheck1">
                   Density
                 </label>
             </div>
             <div class="col-md-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
                 <label class="form-check-label" for="gridCheck1">
                   Pressure
                 </label>
@@ -60,19 +60,19 @@
           </div>
           <div class="row">
             <div class="col-md-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
                 <label class="form-check-label" for="gridCheck1">
                   Temperature
                 </label>
             </div>
             <div class="col-md-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
                 <label class="form-check-label" for="gridCheck1">
                   Volume Flow
                 </label>
             </div>
             <div class="col-md-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
                 <label class="form-check-label" for="gridCheck1">
                   Mass Flow
                 </label>
@@ -80,19 +80,19 @@
           </div>
           <div class="row">
             <div class="col-md-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
                 <label class="form-check-label" for="gridCheck1">
                   Energy
                 </label>
             </div>
             <div class="col-md-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
                 <label class="form-check-label" for="gridCheck1">
                   Date & Time
                 </label>
             </div>
             <div class="col-md-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
                 <label class="form-check-label" for="gridCheck1">
                   Fluid
                 </label>
@@ -100,24 +100,25 @@
           </div>
           <div class="row">
             <div class="col-md-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
                 <label class="form-check-label" for="gridCheck1">
                   Alarm[3]
                 </label>
             </div>
             <div class="col-md-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
                 <label class="form-check-label" for="gridCheck1">
                   Alarm[2]
                 </label>
             </div>
             <div class="col-md-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <input class="form-check-input big-checkbox" type="checkbox" id="gridCheck1">
                 <label class="form-check-label" for="gridCheck1">
                   Alarm[1]
                 </label>
             </div>
           </div>
+          <br>
           <button type="button" class="btn btn-primary btn-block wideBTN">SET</button>                          
       </form>
     </div>
